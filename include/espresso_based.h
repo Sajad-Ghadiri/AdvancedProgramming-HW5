@@ -1,6 +1,11 @@
 #ifndef ESPRESSO_BASED_H
 #define ESPRESSO_BASED_H
 
+#include <vector>
+#include <string>
+#include "ingredient.h"
+#include "sub_ingredients.h"
+
 class EspressoBased
 {
 public:

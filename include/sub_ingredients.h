@@ -1,7 +1,9 @@
 #ifndef SUB_INGREDIENTS_H
 #define SUB_INGREDIENTS_H
 
-class Cinnamon
+#include "ingredient.h"
+
+class Cinnamon : public Ingredient
 {
 public:
     Cinnamon(size_t units) : Ingredient{5, units}
@@ -12,10 +14,10 @@ public:
     virtual std::string get_name() {return this->name;}
 };
 
-class Chocolate
+class Chocolate : public Ingredient
 {
 public:
-    Cinnamon(size_t units) : Ingredient{5, units}
+    Chocolate(size_t units) : Ingredient{5, units}
     {
         this->name = "Chocolate";
     }
@@ -23,10 +25,10 @@ public:
     virtual std::string get_name() {return this->name;}
 };
 
-class Sugar
+class Sugar : public Ingredient
 {
 public:
-    Cinnamon(size_t units) : Ingredient{1, units}
+    Sugar(size_t units) : Ingredient{1, units}
     {
         this->name = "Sugar";
     }
@@ -34,10 +36,10 @@ public:
     virtual std::string get_name() {return this->name;}
 };
 
-class Cookie
+class Cookie : public Ingredient
 {
 public:
-    Cinnamon(size_t units) : Ingredient{10, units}
+    Cookie(size_t units) : Ingredient{10, units}
     {
         this->name = "Cookie";
     }
@@ -45,10 +47,10 @@ public:
     virtual std::string get_name() {return this->name;}
 };
 
-class Espresso
+class Espresso : public Ingredient
 {
 public:
-    Cinnamon(size_t units) : Ingredient{15, units}
+    Espresso(size_t units) : Ingredient{15, units}
     {
         this->name = "Espresso";
     }
@@ -56,10 +58,10 @@ public:
     virtual std::string get_name() {return this->name;}
 };
 
-class Milk
+class Milk : public Ingredient
 {
 public:
-    Cinnamon(size_t units) : Ingredient{10, units}
+    Milk(size_t units) : Ingredient{10, units}
     {
         this->name = "Milk";
     }
@@ -68,10 +70,10 @@ public:
 };
 
 
-class MilkFoam
+class MilkFoam : public Ingredient 
 {
 public:
-    Cinnamon(size_t units) : Ingredient{5, units}
+    MilkFoam(size_t units) : Ingredient{5, units}
     {
         this->name = "MilkFoam";
     }
@@ -79,10 +81,10 @@ public:
     virtual std::string get_name() {return this->name;}
 };
 
-class Water
+class Water : public Ingredient
 {
 public:
-    Cinnamon(size_t units) : Ingredient{1, units}
+    Water(size_t units) : Ingredient{1, units}
     {
         this->name = "Water";
     }
