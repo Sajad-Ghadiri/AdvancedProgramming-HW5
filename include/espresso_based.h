@@ -16,10 +16,10 @@ public:
     void brew();
     std::vector<Ingredient*>& get_ingredients();
 
-    ~EspressoBased();
+    virtual ~EspressoBased();
 
 protected:
-    EspressoBased();
+    EspressoBased() = default;
     EspressoBased(const EspressoBased& esp);
     void operator=(const EspressoBased& esp);
 
