@@ -2,13 +2,6 @@
 
 
 
-///////////////////// Constructor /////////////////
-    // EspressoBased::EspressoBased()
-    // : name{}
-    // , ingredients{}
-    // {
-    // }
-
 //////////////// Copy constructor ////////////////
     EspressoBased::EspressoBased(const EspressoBased& esp)
     : name{esp.name}
@@ -35,7 +28,6 @@
             if (temp_name == "Water")
                 ingredients.push_back(new Water{temp_unit});
         }
-        // ingredients = esp.ingredients ;
 
     }
 
@@ -62,11 +54,6 @@
         
         name = esp.name ;
 
-        // ingredients = esp.ingredients ;
-
-
-        
-        
     }
 
 /////////////////// get_ingredients ///////////////

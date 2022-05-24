@@ -17,7 +17,7 @@ public:
     std::vector<Ingredient*>& get_ingredients();
 
     virtual ~EspressoBased();
-
+    
 protected:
     EspressoBased() = default;
     EspressoBased(const EspressoBased& esp);
@@ -27,5 +27,4 @@ protected:
     std::string name;
 
 };
-
 #endif // ESPRESSO_BASED_H
