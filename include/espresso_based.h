@@ -1,6 +1,7 @@
 #ifndef ESPRESSO_BASED_H
 #define ESPRESSO_BASED_H
 
+#include <iostream>
 #include <vector>
 #include <string>
 #include "ingredient.h"

@@ -12,8 +12,8 @@
 //////////////// Copy constructor ////////////////
     EspressoBased::EspressoBased(const EspressoBased& esp)
     {
-        name = esp.name ;
-        ingredients = esp.ingredients ;
+        // name = esp.name ;
+        // ingredients = esp.ingredients ;
 
     }
 
@@ -31,7 +31,15 @@
     void EspressoBased::operator=(const EspressoBased& esp)
 
     {
+        if(this == &esp)
+        
+        name = esp.name ;
 
+        // ingredients = esp.ingredients ;
+
+
+        
+        
     }
 
 /////////////////// get_ingredients ///////////////
