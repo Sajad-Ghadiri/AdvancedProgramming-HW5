@@ -39,6 +39,11 @@
 
     }
 
+////////////////// brew /////////////////////////
+    void EspressoBased::brew()
+    {
+       
+    }
 ////////////////// Destructor ////////////////////
 
     EspressoBased::~EspressoBased()
